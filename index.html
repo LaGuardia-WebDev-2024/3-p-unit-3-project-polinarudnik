@@ -20,23 +20,30 @@ Select ONE Additional Feature to Add
   <title>Project: Recipe book</title>
   <meta charset="utf-8">
   <style>
-    
+   body{cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🐾 </text></svg>") 16 0,auto; /*!emojicursor.app*/
+  text-align: center;}
+    .one{background-color:rgb(63, 63, 206)}
+  .create_bowl{text-align:left}
+   table, th, td {
+            border: 1px solid;
+          }
+  
   </style>
 </head>
 
 <body>
 
-  <h1>Polina's guide to dog feeding</h1>
+  <h1 class="one">Polina's guide to dog feeding</h1>
 
 
-  <p>Want to start making homemade food for your dog? The basic diet a dog requires consists of 
+  <p class="one">Want to start making homemade food for your dog? The basic diet a dog requires consists of 
     Vitamins and minerals, Fibers, Oils and Fats,
     Carbohydrates, and Proteins. Use this guide to make sure you remember to include everything your dog requires to live a healthy and happy life.
   </p>
 
   <h2>Basic ratio for your Ingerdients</h2>
  
-  <img
+  <img id="visual"
   src=https://images.squarespace-cdn.com/content/v1/681dd1fc44525c0eb30d70fa/2f09933a-eb96-42c8-b956-c1a5dc76684e/PUREPRO_chart_improved_bluelogo_whitetext.png
   width="300"
   alt="ratio"
@@ -88,7 +95,7 @@ Select ONE Additional Feature to Add
     </tbody>
   </table>
   <h3>Necessary vitamins and minerals to include</h3>
-   <table>
+   <table id="minerals">
     <thead>
       <tr>
         <th>Vitamins</th>
@@ -119,29 +126,35 @@ Select ONE Additional Feature to Add
   <p>The amount of calories you give your dog in total is determined by their age and weight.
     Here is a chart to help you determine that amount.
   </p>
-  <img
+  <img id="chart"
   src=https://www.marsden-weighing.co.uk/storage/images/general/dog-food-guide.jpg
   width="300"
   alt="amount"
   >
  
 
-  <p><strong>Create A Perfect Bowl</strong>
+  <p class="create_bowl"><strong>Create A Perfect Bowl</strong>
   </p>
-  <ul>
+
+  <ul class="create_bowl">
     <li>Time:5 minutes</li>
     <li>Serves:1</li>
   </ul>
- <ol>
-  <li>How much food does your dog need? Refer to the <a href="?">chart</a></li>
-  <li>Choose your protein(s)</li>
+ <ol class="create_bowl">
+  <li>How much food does your dog need? Refer to the <a href="#chart">chart</a></li>
+  <li>Choose your protein(s).</li>
   <li>Choose your Fiber(s)</li>
   <li>Choose your Fats/oils</li>
   <li>Choose your Carbs</li>
-  <li>Make sure your ingredients include the necessary vitamins and minerals.</li>
+  <li>Make sure your ingredients include the necessary <a href="minerals">vitamins and minerals.</a></li>
+  <li>Portion your ingredients based on this <a href="#visual">visual</a></li>
  </ol>
- <p>You can choose all of the above from the <a href="#examples_table">table</a></p>
+ <p class="create_bowl">You can choose your ingredients from the <a href="#examples_table">table</a>, or research them yourself. Your result will be a well balanced meal for your dog, one which they will definitely apprechiate. Here is an example of a well portioned bowl from <a href="https://www.waggytailrescue.org/">Waggy Tail Rescue:</a></p>
 
+ <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ByEfQxcEig_I0PCNEHvZMe2kFDXn5LLAjQ&s
+  width=300
+  alt=food bowl
+  >
 </body>
 
 </html>
